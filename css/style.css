@@ -1,0 +1,223 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
+/* font-family: 'Kalam', cursive; */
+/* font-family: 'Cormorant Garamond', serif; */
+/* GLOBALES */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 0;
+  line-height: 1.6;
+  font-family: "Kalam", cursive;
+  background-image: url(../images/fondo.webp);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(0, 0, 0);
+}
+
+img {
+  width: 90%;
+  height: auto;
+}
+
+nav, .que_hacemos, .presentacion, .footer_content {
+  width: 80%;
+  margin: auto;
+}
+
+.titulo-que_hacemos, .presentacion {
+  margin-bottom: 10%;
+}
+
+/* VARIABLES */
+p {
+  font-size: 2.6rem;
+  color: rgb(4, 4, 4);
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.btn, .btn-secundario, .btn-principal {
+  border: none;
+  border-radius: 2px;
+  padding: 0.7em 1.5em;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.btn-principal {
+  color: #fff;
+  background-color: #212222;
+}
+
+.btn-secundario {
+  background-color: rgb(134, 132, 132);
+}
+
+/* USO DE MIXINS EN SASS */
+/* INICIO PAGINA INDEX */
+.logo {
+  width: 120px;
+  height: 100px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  border-top: 0px solid rgb(20, 20, 20);
+  width: 100%;
+  border-radius: 10;
+}
+
+.wrapper {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.presentacion {
+  padding-top: 200px;
+  padding-bottom: 50px;
+}
+
+/* NESTING */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+nav ul {
+  display: flex;
+  padding: 0;
+}
+nav ul a {
+  padding: 10px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+nav ul a:hover {
+  color: #070808;
+  transform: scale(1.1);
+}
+
+.presentacion {
+  font-family: "Courier New", Courier, monospace;
+  padding-top: 200px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.presentacion .flex-item2 {
+  text-align: center;
+}
+.presentacion h1 {
+  margin-top: 100px;
+  padding-right: 20px;
+  font-size: 3rem;
+}
+.presentacion p {
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+/* FIN PAGINA INDEX */
+/* INICIO VOTA */
+.display-3 {
+  text-align: center;
+  margin-bottom: 200px;
+  text-decoration: underline;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.imagen-card-1 {
+  width: 400px;
+}
+
+.imagen-card-2 {
+  width: 400px;
+}
+
+.imagen-card-3 {
+  width: 400px;
+}
+
+/* FIN VOTA */
+footer {
+  min-height: 80px;
+  background-color: rgb(52, 53, 51);
+  margin-top: 500px;
+}
+footer .footer-content {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* PANTALLAS EXTRA ANCHAS */
+@media (min-width: 1400px) {
+  nav, .que_hacemos, .footer-content, .presentacion {
+    width: 60%;
+    margin: auto;
+  }
+}
+/* pantallas medianas */
+@media (max-width: 992px) {
+  .presentacion, .tipo-que_hacemos {
+    flex-wrap: wrap;
+  }
+  .presentacion div {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+/* PANTALLAS PEQUEÑAS */
+@media (max-width: 420px) {
+  .presentacion div {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .presentacion div h1, .presentacion div p {
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

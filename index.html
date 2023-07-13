@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfamundo</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header id="menu">
+      <nav>
+        <a href="index.html"
+          ><img
+            src="./images/logoalfamundo.png"
+            class="logo"
+            alt="logo"
+            width="400"
+            height="200"
+        /></a>
+        <ul>
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="./paginas/vota.html">VOTA!</a></li>
+          <li><a href="./paginas/nosotros.html">Nosotros</a></li>
+          <li><a href="./paginas/contacto.html">Contacto</a></li>
+          <li><a href="./paginas/videos.html">Videos</a></li>
+          <li><a href="/paginas/form.html">Loguearte</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="presentacion">
+      <div class="flex-item1">
+        <h1>PODRAS ENCONTRAR QUE DELICIA COMER HOY</h1>
+        <p>
+          Somos una pagina donde te puedes sentir como en tu casa, te
+          recibiremos de la mejor manera!
+        </p>
+        <div>
+          <button class="btn-principal" type="submit">VOTA!</button>
+        </div>
+      </div>
+      <div class="flex-item2">
+        <img src="./images/capitandelespacio.png " alt="caratula" />
+      </div>
+    </section>
+
+    
+
+    <footer>
+      <p class="footer-content">
+        ALFAMUNDO &copy;Todos los derechos reservados 2023
+      </p>
+    </footer>
+    <script>
+      const menu = document.getElementById("menu");
+      window.onscroll = function () {
+        if (window.pageYOffset > 10) {
+          menu.style.backgroundColor = "#fff";
+        } else {
+          menu.style.backgroundColor = "initial";
+        }
+      };
+    </script>
+  </body>
+</html>
